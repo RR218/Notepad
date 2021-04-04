@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- start of head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="fav.svg" />
+    <title>Notepad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- end of head -->
+
+  <!-- start of body -->
+  <body>
+    <!-- start of wrapper -->
+    <div class="wrapper">
+      <!-- start of logo header -->
+      <div id="logoContainer">
+        <img src="header.svg" alt="NOTEPAD" id="svg" />
+      </div>
+      <!-- end of logo header -->
+
+      <!-- start of title -->
+      <div id="titleContainer">
+        <input id="title" type="text" placeholder="Title:" />
+      </div>
+      <!-- end of title -->
+
+      <!-- start of optionsContainsr -->
+      <div class="optionsContainsr">
+        <!-- start of button options -->
+        <button class="addMore" title="Save" id="save">
+          <i class="fa fa-save"></i>
+        </button>
+        <button class="addMore" title="Download" id="download">
+          <i class="fa fa-download"></i>
+        </button>
+        <button class="addMore" title="Copy" id="copy">
+          <i class="fa fa-copy"></i>
+        </button>
+        <button class="addMore" title="Italic" id="italic">
+          <i class="fas fa-italic"></i>
+        </button>
+        <button class="addMore" title="Strike Through" id="strikethrough">
+          <i class="fas fa-strikethrough"></i>
+        </button>
+        <button class="addMore" title="Bold" id="bold">
+          <i class="fas fa-bold"></i>
+        </button>
+        <button class="addMore" title="Underline" id="underline">
+          <i class="fas fa-underline"></i>
+        </button>
+        <div class="seperator"></div>
+        <button class="addMore" title="Align Left" id="alignLeft">
+          <i class="fas fa-align-left"></i>
+        </button>
+        <button class="addMore" title="Align Center" id="alignCenter">
+          <i class="fas fa-align-center"></i>
+        </button>
+        <button class="addMore" title="Align Right" id="alignRight">
+          <i class="fas fa-align-right"></i>
+        </button>
+        <div class="seperator"></div>
+        <button class="addMore" title="Ordered List" id="orderedList">
+          <i class="fas fa-list-ol"></i>
+        </button>
+        <button class="addMore" title="Unordered List" id="unorderedList">
+          <i class="fas fa-list-ul"></i>
+        </button>
+        <!-- end of button options -->
+
+        <div class="seperator"></div>
+
+        <!-- start of font family select options -->
+        <select class="addMore" title="Font Family" id="fontFamily">
+          <option disabled default>Font Family</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Arial">Arial</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Tahoma">Tahoma</option>
+          <option value="Verdana">Verdana</option>
+        </select>
+        <!-- end of font family select options -->
+
+        <!-- start of fontsize select options -->
+        <select class="addMore" title="Font Size" id="fontSize">
+          <option>1</option>
+          <option>2</option>
+          <option selected>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+        </select>
+        <!-- end of font size select options -->
+
+        <div class="seperator"></div>
+      </div>
+      <!-- end of options containsr -->
+
+      <!-- start of text editor -->
+      <div name="editor" id="editor" contenteditable="true"></div>
+      <!-- end of text editor -->
+    </div>
+    <!-- end of wrapper -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+      integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+  <!-- end of body -->
+</html>
