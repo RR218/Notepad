@@ -1,3 +1,3 @@
 # Notepad
 
-#Basic Notepad App
+Basic Notepad App
